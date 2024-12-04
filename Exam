@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Road Vehicle Breakdown Assistance</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            margin-top: 5px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        .mechanic-list,
+        .user-profile,
+        .admin-section {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mechanic-list li,
+        .user-profile li {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>On-Road Vehicle Breakdown Assistance</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#search">Search Mechanic</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="container section" id="home">
+        <h2>Welcome to Vehicle Breakdown Assistance</h2>
+        <p>If you're stranded on the road, we help you find licensed mechanics near you. Register now and get assistance!</p>
+    </section>
+
+    <!-- User Registration Section -->
+    <section class="container section" id="register">
+        <h2>User Registration</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="user-name">Full Name</label>
+                <input type="text" id="user-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="user-password">Password</label>
+                <input type="password" id="user-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="vehicle">Vehicle Type</label>
+                <input type="text" id="vehicle" name="vehicle" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </section>
+
+    <!-- Login Section -->
+    <section class="container section" id="login">
+        <h2>User Login</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </section>
+
+    <!-- Mechanic Search Section -->
+    <section class="container section" id="search">
+        <h2>Search for a Mechanic</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="location">Enter Your Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <button type="submit" class="btn">Search Mechanics</button>
+        </form>
+
+        <h3>Mechanics Nearby:</h3>
+        <ul class="mechanic-list">
+            <li>John's Auto Repair - 3.2 miles</li>
+            <li>Mike's Garage - 5.5 miles</li>
+            <li>Quick Fix Mechanics - 2.0 miles</li>
+        </ul>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="container section" id="feedback">
+        <h2>Post Feedback</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- User Profile Section -->
+    <section class="container section" id="profile">
+        <h2>Your Profile</h2>
+        <ul class="user-profile">
+            <li><strong>Name:</strong> John Doe</li>
+            <li><strong>Email:</strong> johndoe@example.com</li>
+            <li><strong>Vehicle Type:</strong> Toyota Corolla</li>
+        </ul>
+        <button class="btn">Edit Profile</button>
+    </section>
+
+    <!-- Admin Section for Approval -->
+    <section class="container section admin-section" id="admin">
+        <h2>Admin Panel</h2>
+        <h3>Mechanics Awaiting Approval</h3>
+        <ul>
+            <li>Mike's Auto Repair - Pending</li>
+            <li>Sam's Mechanics - Pending</li>
+            <li>Speedy Repairs - Pending</li>
+        </ul>
+        <button class="btn">Approve Mechanics</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 On-Road Vehicle Assistance. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
