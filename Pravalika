@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Details</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        /* Speakers Section */
+        .speakers {
+            padding: 40px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .speaker-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .speaker {
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .speaker img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .speaker h3 {
+            margin-top: 10px;
+        }
+
+        .speaker a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Event Details Section */
+        .event-details, .purpose, .schedule {
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .event-details p, .purpose p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .schedule ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .schedule li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Registration Button */
+        .registration {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .register-button {
+            padding: 15px 30px;
+            background-color: #FF9900;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #FF6600;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Event Name</h1>
+            <p>Your Event Tagline Here</p>
+        </div>
+    </header>
+
+    <!-- Speakers Section -->
+    <section class="speakers">
+        <h2>Meet Our Speakers</h2>
+        <div class="speaker-list">
+            <div class="speaker">
+                <img src="speaker1.jpg" alt="Speaker 1">
+                <h3>John Doe</h3>
+                <a href="https://link-to-speaker1.com" target="_blank">Profile Link</a>
+            </div>
+            <div class="speaker">
+                <img src="speaker2.jpg" alt="Speaker 2">
+                <h3>Jane Smith</h3>
+                <a href="https://link-to-speaker2.com" target="_blank">Profile Link</a>
+            </div>
+            <div class="speaker">
+                <img src="speaker3.jpg" alt="Speaker 3">
+                <h3>Mark Johnson</h3>
+                <a href="https://link-to-speaker3.com" target="_blank">Profile Link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <h2>Event Details</h2>
+        <p><strong>Venue:</strong> Virtual Conference (Online)</p>
+        <p><strong>Date:</strong> December 12, 2024</p>
+        <p><strong>Time:</strong> 10:00 AM - 3:00 PM (EST)</p>
+    </section>
+
+    <!-- Purpose & Audience Section -->
+    <section class="purpose">
+        <h2>About the Event</h2>
+        <p>Our event aims to bring together thought leaders from the industry to discuss the latest trends in technology, innovation, and entrepreneurship. It is designed for entrepreneurs, business owners, and professionals interested in enhancing their knowledge and growing their businesses.</p>
+        <p><strong>Target Audience:</strong> Entrepreneurs, tech enthusiasts, business professionals</p>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section class="schedule">
+        <h2>Event Schedule</h2>
+        <ul>
+            <li><strong>10:00 AM:</strong> Opening Remarks</li>
+            <li><strong>10:30 AM:</strong> Keynote Speech by John Doe</li>
+            <li><strong>11:30 AM:</strong> Panel Discussion: The Future of Tech</li>
+            <li><strong>12:30 PM:</strong> Networking Lunch</li>
+            <li><strong>1:30 PM:</strong> Breakout Sessions</li>
+            <li><strong>2:30 PM:</strong> Closing Keynote by Jane Smith</li>
+            <li><strong>3:00 PM:</strong> Event Conclusion</li>
+        </ul>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration">
+        <h2>Register Now</h2>
+        <a href="registration.html" class="register-button">Register for Event</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Event Organization. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
